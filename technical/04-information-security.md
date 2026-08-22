@@ -102,8 +102,8 @@ Rule: ALLOW any → 10.0.0.5:80 (HTTP traffic)
 
 **Example:**  
 Login form input: `' OR '1'='1`  
-Query becomes: `SELECT * FROM users WHERE username='' OR '1'='1' AND password='...'`  
-Since `'1'='1'` is always true, the attacker bypasses authentication.
+Query becomes: `SELECT * FROM users WHERE username='admin' OR '1'='1' --' AND password='...'`  
+Since `'1'='1'` is always true, the attacker bypasses authentication by commenting the password validation and bypassing username validation through OR operation with a true condiation.
 
 **Prevention:** Use parameterised queries / prepared statements; input validation; principle of least privilege on database accounts.
 
