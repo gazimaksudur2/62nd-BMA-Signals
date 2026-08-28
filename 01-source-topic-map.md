@@ -97,3 +97,20 @@ Every raw question from `signal-corps-questionset.txt` is listed below, mapped t
 | TCP vs UDP differences | `technical/01-networking.md` |
 | Firewall | `technical/04-information-security.md` |
 | Armed Forces Day | `gk/02-bangladesh-affairs.md` |
+
+---
+
+## 62nd BMA Special Course — Actual Exam Questions (August 2026)
+
+Each question was worth **10 marks**.
+
+| Raw question | Topic file |
+|---|---|
+| (a) What is cache memory? Differentiate L1/L2/L3. Why faster than RAM? How does it improve CPU performance? | `technical/06-cs-fundamentals.md` + `practice/62nd-actual-exam-answers.md` |
+| (b) Draw a flowchart for a smart parking system | `technical/06-cs-fundamentals.md` + `practice/62nd-actual-exam-answers.md` |
+| (c) What is a data structure? Differentiate linear vs non-linear. Explain Stack and Queue. | `technical/06-cs-fundamentals.md` + `practice/62nd-actual-exam-answers.md` |
+| (d) Write the OSI model layers and briefly describe their functions with examples | `technical/01-networking.md` + `practice/62nd-actual-exam-answers.md` |
+| (e) C program: Employee ID, base salary → compute bonus (10%/15%/20% slabs) → output bonus and gross salary | `technical/03-programming.md` + `practice/62nd-actual-exam-answers.md` |
+| (f) What is SDLC? Explain how it is utilised in software development | `technical/06-cs-fundamentals.md` + `practice/62nd-actual-exam-answers.md` |
+
+> **Note:** Questions (c), (e) and (f) are **new topics** not covered in any prior BMA Signals paper in this archive. They are fully answered in `practice/62nd-actual-exam-answers.md` and their study notes are in `technical/06-cs-fundamentals.md`.
