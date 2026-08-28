@@ -98,15 +98,18 @@ Rule: ALLOW any → 10.0.0.5:80 (HTTP traffic)
 
 ## 5. SQL Injection
 
-**Definition:** SQL injection is an attack where malicious SQL code is inserted into an input field to manipulate the database query and gain unauthorised access or extract data.
+**Definition:** SQL injection is an attack where malicious SQL code is inserted into input fields to manipulate backend queries, allowing attackers to bypass security, access, or modify data.
 
-**Example:**  
-Login form input: `' OR '1'='1`  
-Query becomes: `SELECT * FROM users WHERE username='' OR '1'='1' AND password='...'`  
-Since `'1'='1'` is always true, the attacker bypasses authentication.
+**Example:**
+*   **Input:** `' OR '1'='1' --`
+*   **Resulting Query:** `SELECT * FROM users WHERE username='admin' OR '1'='1' --' AND password='...'`
+*   **Impact:** The `'1'='1'` condition is always true, and `--` comments out the password check. The attacker successfully bypasses authentication.
 
-**Prevention:** Use parameterised queries / prepared statements; input validation; principle of least privilege on database accounts.
-
+**Prevention:**
+*   **Parameterized Queries (Prepared Statements):** Treat input strictly as data, not executable code.
+*   **Input Validation:** Sanitize and restrict inputs to expected formats.
+*   **Principle of Least Privilege:** Limit database account permissions to the bare minimum.
+  
 ---
 
 ## Q&A Bank
